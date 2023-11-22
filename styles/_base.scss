@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    font-family: 'Source Serif 4', Arial, sans-serif;
+    text-align: center;
+}
+
+section, footer {
+    padding: 100px 0;
+}
+
+@media screen and (max-width: 1024px) {
+    section {
+        padding: 80px 0;
+    }
+
+    footer {
+        padding: 80px 0 78px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        padding: 70px 0;
+    }
+
+    footer {
+        padding: 70px 0 65px;
+    }
+}
+
+
+
+h1 {
+    font-size: 4.25rem;
+    line-height: 103px;
+}
+
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 3rem;
+        line-height: 73px; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+        line-height: 58px; 
+    }
+}
+
+.wrapper img {
+    height: 100%;
+}
+
+img {
+    width: 100%;
+}
+

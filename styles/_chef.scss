@@ -1,0 +1,50 @@
+.chef {
+    background-color: #F3F7EA;
+    &__img {
+        max-width: 398px;
+        width: 100%;
+        margin: 0 auto 30px;
+    }
+    &__description {
+        font-size: $small-font;
+        font-weight: $normal;
+        line-height: $small-line;
+        margin: 30px 0;
+    }
+    &__text {
+        margin: 0 auto;
+        max-width: 936px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .chef__img {
+        max-width: 282px;
+    }
+
+    .chef__description {
+        font-size: 1.1rem;
+        line-height: 27px;
+    }
+
+    .chef__text {
+        max-width: 691px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .chef__img {
+        max-width: 251px;
+        margin: 0 auto 20px;
+    }
+
+    .chef__description {
+        font-size: 1rem;
+        line-height: 25px;
+        margin: 20px 0;
+    }
+
+    .chef__text {
+        max-width: 626px;
+    }
+}

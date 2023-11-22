@@ -1,0 +1,22 @@
+.flex-box {
+  @include flex;
+  position: relative;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .flex-box {
+    flex-direction: column;
+    padding: 0 24px;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .flex-box {
+    align-items: center;
+  }
+}
+
+
+

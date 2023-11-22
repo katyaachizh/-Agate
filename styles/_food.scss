@@ -1,0 +1,141 @@
+.food {
+    width: calc((100% - 2 * 48px) / 3); 
+    text-align: left;
+    max-width: 360px;
+    position: relative;
+    &__text {
+        line-height: $recipe-line;
+        font-size: $recipe-font;
+        margin-top: 35px;
+    }
+    &__title {
+        font-size: $base-font;
+        line-height: 38px;
+    }
+    &__recipe {
+        font-weight: $normal;
+        margin: 15px 0;
+    }
+    &__price {
+        font-weight: 700;
+    }
+    &--red::before {
+        @include pseudo(#D33B3B, 'HOT!')
+    }
+    &--green::before {
+        @include pseudo(#B3E151, 'NEW!')
+    }
+    &--yellow::before {
+        @include pseudo(#E5A434, 'HIT!')
+    }
+    &:not(:last-child) {
+        margin-right: 48px;
+    }
+} 
+
+@media screen and (max-width: 1250px) {
+    .food {
+        width: calc((100% - 2 * 30px) / 3);
+        max-width: 310px;
+        &:not(:last-child){
+            margin-right: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .food {
+        max-width: 300px;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .food {
+        max-width: calc((100% - 2 * 92px) / 3); 
+        max-width: 253px;
+        &__text {
+            line-height: 19px;
+            font-size: .75rem;
+        }
+        &__title {
+            font-size: 1.25rem;
+            line-height: 31px;
+        }
+        &__recipe {
+            margin-bottom: 17px;
+            max-width: 252px;
+        }
+        &--red::before {
+            @include pseudo-1024;
+        }
+        &--green::before {
+            @include pseudo-1024;
+        }
+        &--yellow::before {
+            @include pseudo-1024;
+        }
+        &:not(:last-child) {
+            margin-right: 92px;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .food {
+        width: calc((100% - 2 * 42px) / 3);
+        max-width: 220px;
+        &:not(:last-child){
+            margin-right: 42px;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .food {
+        width: calc((100% - 2 * 32px) / 3);
+        max-width: 210px;
+        &:not(:last-child){
+            margin-right: 32px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .food {
+        display: flex;
+        width: 100%;
+        max-width: 658px;
+        &__text {
+            max-width: 348px;
+            text-align: left;
+            font-size: 1rem;
+            line-height: 25px;
+            padding-top: 17px;
+            margin: 0 0 0 24px;
+        }
+        &__recipe {
+            margin: 20px 0;
+            max-width: 348px;
+        }
+        &--red::before {
+            @include pseudo-768;
+        }
+        &--green::before {
+            @include pseudo-768;
+        }
+        &--yellow::before {
+            @include pseudo-768;
+        }
+        &:not(:last-child) {
+            margin-right: 0;
+            margin-bottom: 58px;
+        }
+    }
+}
+
+@media screen and (max-width: 678px) {
+    .food {
+        flex-direction: column;
+    }
+}

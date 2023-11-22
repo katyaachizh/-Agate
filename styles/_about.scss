@@ -1,0 +1,19 @@
+.about {
+    background-color: #F3F7EA;
+    &__text {
+        max-width: 941px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .about__text {
+        max-width: 602px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about__text {
+        max-width: 541px;
+    }
+}

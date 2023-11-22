@@ -1,0 +1,56 @@
+@mixin flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+@mixin button($br-color, $color) {
+    display: block;
+    width: 312px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 1rem;
+    margin: 0 auto;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 30px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: $br-color;
+    color: $color;
+    position: relative;
+    z-index: 1;
+}
+
+@mixin pseudo($bg-color, $content) {
+    content: $content;
+    width: 58px;
+    height: 58px;
+    line-height: 58px;
+    color: white;
+    font-size: .7rem;
+    font-weight: $title-weight;
+    text-align: center;
+    background-color: $bg-color;
+    border-radius: 50%;
+    position: absolute;
+    top: -25px;
+    left: -25px;
+}
+
+@mixin pseudo-1024 {
+    width: 46px;
+    height: 46px;
+    line-height: 46px;
+    font-size: .6rem;
+    left: -20px;
+}
+
+@mixin pseudo-768 {
+    width: 56px;
+    height: 56px;
+    line-height: 56px;
+    font-size: .7rem;
+    left: -20px;
+}

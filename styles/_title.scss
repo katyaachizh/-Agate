@@ -1,0 +1,19 @@
+.title {
+    font-size: $title-font;
+    font-weight: $title-weight;
+    line-height: $title-line;
+}
+
+@media screen and (max-width: 1024px) {
+    .title {
+        font-size: 1.75rem;
+        line-height: 44px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: $base-font;
+        line-height: 38px;
+    }
+}

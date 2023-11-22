@@ -1,0 +1,36 @@
+.banner {
+    max-width: 914px;
+    padding: 218px 0 185px;
+    margin: 0 auto;
+    color: #fff;
+    &__text {
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 31px;
+        margin: 35px auto 60px;
+        position: relative;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .banner {
+        max-width: 697px;
+        padding: 183px 0 153px;
+        &__text{
+            font-size: .9rem;
+            line-height: 22px;
+            margin: 35px 0 63px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner {
+        max-width: 430px;
+        padding: 171px 0 99px;
+        &__text{
+            margin: 35px 0 66px;
+        }
+    }
+}
